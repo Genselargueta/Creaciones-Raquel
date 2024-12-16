@@ -1,0 +1,99 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciones Raquel</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <nav>
+            <p href="#banner" class="logo_principal">Creaciones Raquel</p>
+            <ul class="navigation">
+                <li><a href="#banner">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#links">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h1>Creaciones Raquel</h1>
+            <a href="https://wa.link/yb2ca7" target="_blank" class="button">Contactame</a><br>
+           
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section class="products" id="products">
+        <div class="content" id="productos-container">
+                <!-- Productos se cargarán dinámicamente con AJAX -->
+                <div class="products-list"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="links">
+      <div class="social-icons">
+          <a href="https://www.facebook.com/share/1FZCeKnTb7/" target="_blank">
+              <img src="facebook-removebg-preview.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/creacionesraquelhn?igsh=MXRiampvZHpraGZ2bA==" target="_blank">
+              <img src="instagram-removebg-preview.png" alt="Instagram" class="social-icon">
+          </a>
+      </div>
+  
+      <!-- Información de contacto -->
+      <div class="contact-info">
+          <a href="https://wa.link/yb2ca7" target="_blank">
+              <img src="whatsaap-removebg-preview.png" alt="WhatsApp" class="social-icon-wt">
+              Contáctanos vía WhatsApp
+          </a>
+      </div>
+  
+      <p>&copy; 2024 <a href="#">Creaciones Raquel</a>. Hecho por Angel Contreras y Gensel Argueta</p>
+  </footer>
+  
+</body>
+
+ <script>
+   function cargarProductos() {
+  fetch("productos.json")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
+      }
+      return response.json();
+    })
+    .then(productos => {
+      const lista = document.querySelector(".products .products-list");
+      productos.forEach(producto => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <img src="${producto.imagen}" alt="${producto.nombre}">
+          <h3>${producto.nombre}</h3>
+          <p>Precio: ${producto.precio}</p>
+          <p>${producto.estado}</p>
+          <p>Disponible: ${producto.disponible}</p>
+          <a href="#" class="button">${producto.boton}</a>
+        `;
+        lista.appendChild(card);
+      });
+    })
+    .catch(error => console.error("Error al cargar los productos:", error));
+}
+
+document.addEventListener("DOMContentLoaded", cargarProductos);
+
+ </script>
+</html>

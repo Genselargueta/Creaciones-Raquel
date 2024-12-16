@@ -1,0 +1,123 @@
+[
+    {
+        "imagen": "stich camisa.jpg",
+       "nombre": "Camisa pintada",
+       "precio":"350",
+      "estado": "4 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "stich.jpg",
+       "nombre": "Cogin pintado ",
+       "precio":"300",
+      "estado": "14.5 × 12 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    },{
+        "imagen": "the week.jpg",
+       "nombre": "Tejido a crochet Amigurumi : the weeknd",
+       "precio":"400",
+      "estado": "9.5 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "vestido.jpg",
+       "nombre": "Trajes Típicos, Traje de Jocomico Tela, burbuja y gabardina",
+       "precio":"2200 cada una",
+      "estado": "Adolescente,  Adulto ",
+      "disponible":"si",
+      "boton":"contactanos"
+    },{
+        "imagen": "vegeta.jpg",
+       "nombre": "Tejido a crochet Amigurumi: vegeta ",
+       "precio":"450",
+      "estado": "10.5 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "pines.jpg",
+       "nombre": "Pines/Botones",
+       "precio":"50",
+      "estado": "6 x 6 cm",
+      "disponible":"si",
+      "boton":"contactanos"
+    },{
+        "imagen": "llaveros.jpg",
+       "nombre": "Llaveros",
+       "precio":"50",
+      "estado": "6 x 6 cm",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "one pice.jpg",
+       "nombre": "Cogin pintado a mano ",
+       "precio":"300",
+      "estado": "14.5 × 12 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    },{
+        "imagen": "muñecas.jpg",
+       "nombre": "Llaveros",
+       "precio":"100",
+      "estado": "4.5 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "muñeca.jpg",
+       "nombre": "Muñeca de tela",
+       "precio":"350",
+      "estado": "10 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    },{
+        "imagen": "flor1.jpg",
+       "nombre": "Ramo tejido ",
+       "precio":"470",
+      "estado": "12-14  pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "flor 2.jpg",
+       "nombre": "Ramo tejido",
+       "precio":"320",
+      "estado": "12 - 14 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "flor rosa.jpg",
+       "nombre": "Ramo tejido",
+       "precio":"220",
+      "estado": "12-14 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "enano.jpg",
+       "nombre": "Tejido Chimi bts",
+       "precio":"250",
+      "estado": "5 pulg",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "cola.jpg",
+       "nombre": "Colas",
+       "precio":"60",
+      "estado": "Colas Lencas",
+      "disponible":"si",
+      "boton":"contactanos"
+    }, {
+        "imagen": "blusa.jpg",
+       "nombre": "Producto 1",
+       "precio":"450",
+      "estado": "talla s,m,l",
+      "disponible":"si",
+      "boton":"contactanos"
+    },{
+        "imagen": "mas.jpg",
+       "nombre": "Productos Variados",
+       "precio":"Depende del Producto",
+      "estado": "Amigurumis, almohadas y mas",
+      "disponible":"si",
+      "boton":"contactanos"
+    }
+  ]
+  
